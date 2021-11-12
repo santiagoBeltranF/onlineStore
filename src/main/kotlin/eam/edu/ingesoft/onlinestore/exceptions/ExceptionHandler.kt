@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseStatus
 import javax.persistence.EntityNotFoundException
 
 @ControllerAdvice
-class ExceptionHandler {
+class gitExceptionHandler {
     @ExceptionHandler(BusinessException::class) //excepcion que se quiere atrapar
     @ResponseBody //que la respuesta va a ser personalizada
     @ResponseStatus(HttpStatus.PRECONDITION_FAILED)
